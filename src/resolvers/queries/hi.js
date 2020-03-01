@@ -1,0 +1,1 @@
+export default () => 'nikola da li vidis ovo';

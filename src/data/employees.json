@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "last_name": "Nikolic",
+        "first_name": "Nikola",
+        "email": "nikola@email.com",
+        "password": "$2b$10$992yD5RQdVKfo7reZcasEOmaLmeH5Jj1i1zwWkLLUxP2xg.zM36wC",
+        "role": "ADMIN"
+    },
+    {
+        "id": 2,
+        "last_name": "Petrovic",
+        "first_name": "Petar",
+        "email": "petar@email.com",
+        "password": "$2b$10$Ke2e40P4hWjHiKPrhI.rB.wfN/JavLKtVlsVzyc.veJKnfM9R6dyW",
+        "role": "USER"
+    }
+]

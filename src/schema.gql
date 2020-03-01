@@ -1,0 +1,75 @@
+type Query {
+    hi: String
+    ho: String
+    employees: [Employee]
+    persons: [Person]
+    companies: [Company]
+    getPerson(id: Int): Person
+    getCompany(id: Int): Company
+}
+
+type Employee {
+    id: Int!
+    last_name: String
+    first_name: String
+    email: String
+    password: String
+    role: String
+}
+
+type Person {
+    id: Int!
+    last_name: String
+    first_name: String
+    gender: String
+    address: String
+    mobile: String
+    email: String
+    category: String
+    status: Int
+}
+
+type Company {
+    id: Int!
+    company_name: String
+    contact_person: String
+    address: String
+    phone: String
+    email: String
+    website: String
+    category: String
+    status: Int
+}
+
+type Mutation {
+    addPerson(input: PersonInput): Person
+    addCompany(input: CompanyInput): Company
+    editPerson(id: Int!, input: PersonInput): Person
+    editCompany(id: Int!, input: CompanyInput): Company
+    deletePerson(id: Int!): Person
+    deleteCompany(id: Int!): Company
+}
+
+input PersonInput {
+    id: Int!
+    first_name: String
+    last_name: String
+    gender: String
+    address: String
+    mobile: String
+    email: String
+    category: String
+    status: Int
+}
+
+input CompanyInput {
+    id: Int!
+    company_name: String
+    contact_person: String
+    address: String
+    phone: String
+    email: String
+    website: String
+    category: String
+    status: Int
+}
